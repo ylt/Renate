@@ -3,7 +3,9 @@ Renate
 
 Old barely implemented custom Minecraft server, last change dated 2012-07-29 (git author date faked to reflect that)
 
-Renate - German/Duth/Norwegian form of Renatus, meaning "Reborn"
+Renate - German/Duth/Norwegian form of Renatus, meaning "Reborn".
+(was meant to symbolise the "rebirth" of D3 server)
+
 This was a collaborative project between @ylt, @sinz and @woder.
 
 History
@@ -11,7 +13,8 @@ History
 
 Back in Minecraft Classic, we ran the D3 community servers, custom server software written by Dadido3 in PureBasic (Basic-like procedural programming language). While it was great, it had the limitations due to the simple nature of it's procedural design (fairly clunky).
 
-The aim of the project was to give the amount of control that D3 server allowed for Minecraft Classic for the then new "SMP", the more complex nature meant that an object orientated design was needed. The server mods do add scripting support, but in doing things, felt that we were always wrestling against the design of the regular server. So the aim of Renate was to be a clean implementation with a huge amount of hooks and flexibility in usage.
+The aim of the project was to give the amount of control that D3 server allowed for Minecraft Classic for
+the then new "SMP", the more complex nature meant that an object orientated design was needed. The server mods do add scripting support, but in doing things, felt that we were always wrestling against the design of the regular server. So the aim of Renate was to be a clean implementation with a huge amount of hooks and flexibility in usage.
 
 Some parts of this were over engineered, the Java IO library is fairly outdated and the NIO was a pain to use so we actually ended up writing a basic library on top of NIO (co.d3s.ylt.renate.network) which was designed to be capable of accepting any unpredictable stream without having to use blocking reads, semi-state machine based logic was used for this. But have had many problems with it due to NIO, and the abstraction itself causing problems so in a few places have actually done temporary hacks out of laziness (directly calling back into server code, if I remember correctly for detecting disconnects).
 
