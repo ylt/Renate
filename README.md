@@ -3,7 +3,7 @@ Renate
 
 Old barely implemented custom Minecraft server, last change dated 2012-07-29 (git author date faked to reflect that)
 
-Renate - German/Duth/Norwegian form of Renatus, meaning "Reborn".
+Renate - German/Dutch/Norwegian form of Renatus, meaning "Reborn".
 (was meant to symbolise the "rebirth" of D3 server)
 
 This was a collaborative project between @ylt, @sinz and @woder.
